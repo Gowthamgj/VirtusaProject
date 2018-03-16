@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="font/main.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/animate.css" type="text/css">
+
+</head>
+<style>
+    .c1{
+        background-image: url("images/bg.jpg");
+        width: 100%;
+        display: block;
+        height: 600px;
+    }
+     
+     #c2
+     {
+         float: left;
+         height: 400px;
+         -webkit-animation-duration: 2s;
+     }
+     #c3{
+         float: right;
+         height: 400px;
+         -webkit-animation-duration: 2s;
+     }
+     img{
+         position: relative;
+     }
+     
+    @font-face 
+    {
+    font-family: 'Fighting';
+    src: url('font/Fighting Spirit 2 bold.ttf');
+    }
+  #company{
+     font-size: 70px;
+     color:#e8202a;
+     text-align: center;
+     text-shadow: 5px 5px black;
+     -webkit-animation-duration: 3s;
+  }
+  #change
+  {
+   height: 100%;
+   overflow:hidden;
+  }
+     
+</style>
+<body>
+    <div id="change">
+    <div class="row c1 animated ">
+    <br><br><br><br>
+        <div class="col-lg-6" ><img class="animated fadeInLeft   img-circle" src="images/bat.jpeg" alt="" width="50%" id="c3"></div>
+        <div class="col-lg-6"><img src="images/super.jpeg" class="animated fadeInRight img-circle" alt=""width="50%"  id="c2" ></div>      
+     </div><br>
+<h1 id="company" class="animated  zoomInUp" style="font-family:Fighting;">Battle Code</h1>
+     
+</div>
+<script>
+        setTimeout( function () {
+            //alert('dsafs');
+            var h = $(window).height();
+            var s=document.getElementById("change").innerHTML="<img src='images/bvss.jpg' width='100%' height = "+ h +" >";}, 4000);
+   
+     </script>
+</body>
+
+</html>
